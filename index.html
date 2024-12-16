@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Classifier</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/4.15.0/tf.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>News Category Classifier</h1>
+        <p>Enter a news article to classify its category:</p>
+        <textarea id="newsInput" placeholder="Enter news text here..."></textarea>
+        <button onclick="classifyNews()">Classify</button>
+        <div id="loading" class="loading">Analyzing...</div>
+        <div id="result" class="result" style="display: none;">
+            <h3>Classification Result:</h3>
+            <div id="categoryResult"></div>
+            <div id="confidenceResults"></div>
+        </div>
+    </div>
+</body>
+</html>
